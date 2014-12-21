@@ -1,0 +1,11 @@
+<!-- Posledné články -->
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4>Posledné články</h4>
+  </div>
+  <ul class="list-group">
+    $for(rawPosts)$
+    <li class="list-group-item"><a href="$url$">$title$ - $date$</a></li>
+    $endfor$
+  </ul>
+</div>
