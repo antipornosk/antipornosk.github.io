@@ -90,7 +90,7 @@ dropMore = fmap (unlines . takeWhile (/= "<!-- MORE -->") . lines)
 
 config :: Configuration
 config = defaultConfiguration
-    { deployCommand = "ls > niniatko"
+    { deployCommand = "git add . && git commit -m 'new' && git push origin hakyll"
     }
 
 --------------------------------------------------------------------------------
